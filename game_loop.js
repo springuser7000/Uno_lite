@@ -175,54 +175,6 @@ function Input_command() {
   }
 }
 
- 
-function key_down(){
-	if (event.which == 69){
-    	//upgrade mining. E key
-        upgrade_hardware();
-    } else if (event.which == 82){
-    	//upgrade fortune. RR key
-        upgrade_software();
-    } else if (event.which == 81){
-    	// Q key
-        Alert_OnOff_function();
-    } else if (event.which == 83){
-    	Lottery_cheap();
-    } else if (event.which == 68){
-        Lottery_midium();
-    } else if (event.which == 70){
-    	Lottery_expencive();
-    } else if (event.which == 13){
-		window.alert("DON'T USE ENTER!");
-    } else  if (event.which == 145){
-      money = money + 1000
-      update();
-    } else if (event.which == 25){
-      window.alert("Made by leeseojun");
-    } else if (event.which == 73){
-      reload_seojuncoin();
-      if (alert_onoff == 1){
-        window.alert(seojuncoin_how_much + " points per coin.");
-      }
-    } else if (event.which == 79){
-      buy_seojuncoin();
-    } else if (event.which == 80){
-      sell_seojuncoin();
-    } else if (event.which == 219){
-      buy_all_seojuncoin();
-    } else if (event.which == 221){
-      sell_all_seojuncoin();
-    } else if (event.which == 45){
-      window.alert(robot_speed);
-    } else if (event.which == 186){
-      upgrade_robot_speed();
-    } else if (event.which == 222){
-      upgrade_robot_add();
-    } else if (event.which == 220){
-      buy_robot();
-    }
-}
-
 
 function Wait_and_boom(){
 	var Money_re;
