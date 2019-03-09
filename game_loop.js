@@ -35,8 +35,10 @@ var one;
 document.getElementById("money_html").innerHTML = money + " Point";
 document.getElementById("how_much_mining_upgrade").innerHTML = "Upgrade Mining(" + upgrade_mining_point + " Point Require)";
 document.getElementById("how_much_fortune_upgrade").innerHTML = "Upgrade Fortune(" + upgrade_fortune_point + " Point Require)";
-document.getElementById("info").innerHTML = money_plus + " Mining Level | " + fortune_power + " Fortune Level"
-document.getElementById("info2").innerHTML = money_plus + " Mining Level | " + fortune_power + " Fortune Level"
+document.getElementById("info").innerHTML = money_plus + " Mining Level"
+document.getElementById("info-1").innerHTML = fortune_power + " Fortune Level"
+document.getElementById("info2").innerHTML = money_plus + " Mining Level"
+document.getElementById("info2-1").innerHTML = fortune_power + " Fortune Level"
 document.getElementById("info3").innerHTML = money_plus + " Mining Level | " + fortune_power + " Fortune Level"
 seojuncoin_how_much = Math.floor(Math.random() * 10000);
 document.getElementById("invest").innerHTML = seojuncoin_how_much + "p/c" + " " + seojuncoin + " coins you have"
@@ -50,8 +52,10 @@ one = setInterval(function(){ check_robot(); }, robot_speed);
 
 function update(){
   document.getElementById("money_html").innerHTML = money + " Point";
-  document.getElementById("info").innerHTML = money_plus + " Mining Level | " + fortune_power + " Fortune Level"
-  document.getElementById("info2").innerHTML = money_plus + " Mining Level | " + fortune_power + " Fortune Level"
+  document.getElementById("info").innerHTML = money_plus + " Mining Level"
+  document.getElementById("info-1").innerHTML = fortune_power + " Fortune Level"
+  document.getElementById("info2").innerHTML = money_plus + " Mining Level"
+  document.getElementById("info2-1").innerHTML = fortune_power + " Fortune Level"
   document.getElementById("info3").innerHTML = money_plus + " Mining Level | " + fortune_power + " Fortune Level"
   document.getElementById("invest").innerHTML = seojuncoin_how_much + "p/c" + " " + seojuncoin + " coins you have"
   document.getElementById("add_robot_id").innerHTML = robot_plus_money + " points require"
